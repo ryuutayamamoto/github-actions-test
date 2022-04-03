@@ -2,16 +2,14 @@ name: learn-github-actions
 on: [push]
 jobs:
   check-bats-version:
-   runs-on: ubuntu-latest
-   steps:
-    - run: echo "this is pen"
-    - run: echo "this is pen"
+    runs-on: ubuntu-latest
+    steps:
     - name: action-git-diff-suggestions
-  # 正確なコミットまたはバージョンにPINを受けることができます。
-  # uses: getsentry/action-git-diff-suggestions@8c75946d0d7bbe80a92cf3579d544321512c30b7
-  uses: getsentry/action-git-diff-suggestions@v1
-  with:
-    # github token
-    github-token: # optional
-    # レビューの提案を追加するメッセージ
-    message: "レビューしました"
+      # 正確なコミットまたはバージョンにPINを受けることができます。
+      # uses: getsentry/action-git-diff-suggestions@8c75946d0d7bbe80a92cf3579d544321512c30b7
+      uses: getsentry/action-git-diff-suggestions@v1
+      with:
+      # github token
+      github-token: # optional
+      # レビューの提案を追加するメッセージ
+      message: "レビューしました"
