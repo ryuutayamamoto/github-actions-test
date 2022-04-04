@@ -37,7 +37,7 @@ jobs:
         run:  'npm install textlint-rule-textlint-rule-ng-word'
 
       - name: Install dependent module
-        run: npm install -g textlint textlint-rule-textlint-rule-ng-word
+        run: npm install
 
       # textlint を走らせる
       - name: Execute textlint for ブログ記事
