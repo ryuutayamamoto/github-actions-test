@@ -31,14 +31,15 @@ jobs:
             node-
 
       - name: Install textlint
-        run:  'npm install --save-dev textlint textlint-rule-preset-smarthr textlint-rule-prh'
+        run:  'npm install --save-dev textlint textlint-rule-preset-smarthr textlint-rule-prh textlint-rule-textlint-rule-ng-word'
 
       - name: Install dependent module
         run: npm install
 
+      # textlint を走らせる
       - name: Execute textlint for ブログ記事
         run: |
-          npx textlint -f checkstyle "articles/*.md" >> .textlint.log
+          npx textlint -f checkstyle "docs/*.md" >> .textlint.log
 
       - name: Run reviewdog
         # textlintで文章上のミスがあった場合のみ、reviewdogを実行させるようにする

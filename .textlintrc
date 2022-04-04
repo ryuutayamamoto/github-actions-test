@@ -2,6 +2,9 @@
   "rules": {
     "no-todo": true,
     "preset-ja-technical-writing": true,
-    "preset-jtf-style": true
+    "preset-jtf-style": true,
+    "textlint-rule-textlint-rule-ng-word": {
+      "words": ["hoge","fuga"]
+    }
   }
 }
