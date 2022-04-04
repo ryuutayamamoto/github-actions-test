@@ -1,5 +1,5 @@
 name: learn-github-actions
-on: [push]
+on: [push,pull_request]
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
@@ -7,5 +7,4 @@ jobs:
     - name: Check for @nocommit
       uses: itsvs/no-merge-action@releases/v0.2
       with:
-        github-token: ${{github.token}}
         keyword: "aaaa"
