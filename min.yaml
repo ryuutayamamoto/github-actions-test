@@ -1,0 +1,10 @@
+name: "textlint-test"
+on: [push]
+
+jobs:
+  textlint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: install
+        uses: actions/npm@master
+      
