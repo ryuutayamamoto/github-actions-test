@@ -38,7 +38,7 @@ jobs:
         run: npm install
 
       # textlint を走らせる
-      - name: Execute textlint for ブログ記事
+      - name: キーワードチェック
         run: |
           npx textlint -f checkstyle "docs/*.md" >> .textlint.log
 
