@@ -8,5 +8,4 @@ jobs:
     - name: Check for @nocommit
       uses: itsvs/no-merge-action@releases/v0.2
       with:
-        github-token: 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
         keyword: "@nocommit"

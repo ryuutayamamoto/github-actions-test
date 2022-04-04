@@ -2,4 +2,4 @@
 
 アクションの修正
 
-aaaaaa
+aaaa
