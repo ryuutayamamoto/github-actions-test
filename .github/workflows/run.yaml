@@ -1,12 +1,16 @@
-name: "Block @nocommit Merges"
+name: "Check PR for word"
 on: [pull_request]
 
 jobs:
   check_pr:
     runs-on: ubuntu-latest
     steps:
-    - name: Check for @nocommit
-      uses: itsvs/no-merge-action@releases/v0.2
+    - name: Check PR
+      uses: JJ/github-pr-contains-action@releases/v0
       with:
         github-token: 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
-        keyword: "@nocommit"
+        bodyDoesNotContain: "Delete this"
+        bodyContains: 'Test'
+        diffContains: 'Test'
+        filesChanged: 1
+        linesChanged: 1
