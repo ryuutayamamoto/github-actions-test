@@ -1,0 +1,17 @@
+name: text_lint_test
+
+on: push
+
+
+jobs:
+  text_lint_test:
+    name: text_lint_test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/npm@master
+      - name: install
+        run: npm install
+      - name: text_lint
+        run:  npx textlint 
