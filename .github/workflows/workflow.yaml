@@ -35,7 +35,10 @@ jobs:
         run:  'npm install --save-dev textlint textlint-rule-preset-smarthr textlint-rule-prh textlint-rule-ng-word'
 
       - name: Install dependent module
-        run: npm install
+        run: |
+          npm install
+          npm install -g textlint textlint-rule-ng-word
+
 
       # textlint を走らせる
           # npx textlint -f checkstyle "docs/*.md" >> .textlint.log
