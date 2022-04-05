@@ -44,7 +44,7 @@ jobs:
           # npx textlint -f checkstyle "docs/*.md" >> .textlint.log
       - name: キーワードチェック
         run: |
-          textlint --rule textlint-rule-ng-word "docs/*.md" >> .textlint.log
+          npx textlint --rule textlint-rule-ng-word "docs/*.md" >> .textlint.log
 
       - name: Run reviewdog
         # textlintで文章上のミスがあった場合のみ、reviewdogを実行させるようにする
