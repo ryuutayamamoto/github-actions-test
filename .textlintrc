@@ -9,7 +9,7 @@
   },
   "plugins": {
     "html": {
-      "extensions": [".php", ".liquid"]
+      "extensions": [".php", ".liquid", ".js"]
     }
   }
 }

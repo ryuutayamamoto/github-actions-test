@@ -45,7 +45,6 @@ jobs:
           # npx textlint -f checkstyle "docs/*.md" >> .textlint.log
       - name: キーワードチェック
         run: |
-            npx textlint
             npx textlint --rule textlint-rule-ng-word "docs/*"
 
 
