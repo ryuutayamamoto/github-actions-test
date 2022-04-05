@@ -45,6 +45,7 @@ jobs:
       - name: キーワードチェック
         run: |
           npx textlint --rule textlint-rule-ng-word README.md
+          
       - name: Run reviewdog
         # textlintで文章上のミスがあった場合のみ、reviewdogを実行させるようにする
         if: failure()
