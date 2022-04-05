@@ -38,9 +38,9 @@ jobs:
         run: npm install
 
       # textlint を走らせる
+          # npx textlint -f checkstyle "docs/*.md" >> .textlint.log
       - name: キーワードチェック
         run: |
-          npx textlint -f checkstyle "docs/*.md" >> .textlint.log
           textlint --rule textlint-rule-ng-word "docs/*.md" >> .textlint.log
 
       - name: Run reviewdog
