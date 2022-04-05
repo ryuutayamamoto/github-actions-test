@@ -6,5 +6,10 @@
     "textlint-rule-ng-word": {
       "words": ["hoge","fuga"]
     }
+  },
+  "plugins": {
+    "html": {
+      "extensions": [".php", ".liquid"]
+    }
   }
 }
