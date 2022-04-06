@@ -4,7 +4,7 @@
     "preset-ja-technical-writing": true,
     "preset-jtf-style": true,
     "textlint-rule-ng-word": {
-      "words": ["hoge","fuga","id","Id","http://","https://"]
+      "words": ["hoge","fuga","id","Id","http://","https://", "archetyp.jp","dev.archetyp.jp"]
     }
   },
   "plugins": {
