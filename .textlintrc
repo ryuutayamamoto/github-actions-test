@@ -3,8 +3,15 @@
     "no-todo": true,
     "preset-ja-technical-writing": true,
     "preset-jtf-style": true,
-    "textlint-rule-textlint-rule-ng-word": {
-      "words": ["hoge","fuga"]
+    "textlint-rule-ng-word": {
+      "words": ["hoge","fuga","id","Id","http://","https://", "archetyp.jp","dev.archetyp.jp",
+        "wh(?:[oy]|e(?:re|n)|at)"
+      ]
+    }
+  },
+  "plugins": {
+    "html": {
+      "extensions": [".php", ".liquid", ".js"]
     }
   }
 }
